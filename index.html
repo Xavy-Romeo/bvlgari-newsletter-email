@@ -12,6 +12,35 @@
             padding: 0;
             box-sizing: border-box;
         }
+        /* mobile version */
+        @media only screen and (max-width: 599px) {
+            .container {
+                padding: 0 15px;
+            }
+            .link-spacer {
+                width: 0% !important;
+            }
+        }
+        @media only screen and (max-width: 450px) {
+            .logo {
+                max-width: 90% !important;
+            }
+            .header-link {
+                font-size: 13px !important;
+                letter-spacing: 0px !important;
+            }
+            .purse-spacer {
+                width: 10px;
+            }
+            .discover-now-btn {
+                font-size: 14px;
+            }
+            .social-link-spacer {
+                width: 15%;
+            }
+            
+        }
+        
     </style>
 </head>
 <body 
@@ -29,20 +58,22 @@
                 <!--Start of Main Container-->
                 <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0"
                     style="margin: 0 auto; max-width: 600px;"
+                    class="container"
                 >
                     <!--Start of Header-->
                     <tr>
                         <td align="center">
                             <a href="https://www.bulgari.com/en-us/" target="_blank" style="text-decoration: none">
-                                <img src="./src/images/Bvlgari logo.png" width="300px" alt="Bvlgari logo" />
+                                <img src="./src/images/Bvlgari logo.png" class="logo" width="300px" alt="Bvlgari logo" />
                             </a>
                             <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0"
                                 style="margin: 20px 0 50px 0;"
                             >
                                 <tr>
-                                    <td width="10%"></td>
+                                    <td width="10%" class="link-spacer"></td>
                                     <td align="center">
                                         <a href="https://www.bulgari.com/en-us/jewelry/new-arrivals" target="_blank"
+                                            class="header-link"
                                             style="
                                                 text-transform: uppercase;
                                                 font-size: 14px;
@@ -56,6 +87,7 @@
                                     </td>
                                     <td align="center">
                                         <a href="https://www.bulgari.com/en-us/jewelry" target="_blank"
+                                            class="header-link"
                                             style="
                                                 text-transform: uppercase;
                                                 font-size: 14px;
@@ -69,6 +101,7 @@
                                     </td>
                                     <td align="center">
                                         <a href="https://www.bulgari.com/en-us/watches/womens" target="_blank"
+                                            class="header-link"
                                             style="
                                                 text-transform: uppercase;
                                                 font-size: 14px;
@@ -82,6 +115,7 @@
                                     </td>
                                     <td align="center">
                                         <a href="https://www.bulgari.com/en-us/bags-and-accessories/womens/handbags" target="_blank"
+                                            class="header-link"
                                             style="
                                                 text-transform: uppercase;
                                                 font-size: 14px;
@@ -93,7 +127,7 @@
                                             Handbags
                                         </a>
                                     </td>
-                                    <td width="10%"></td>
+                                    <td width="10%" class="link-spacer"></td>
                                 </tr>
                             </table>
                         </td>
@@ -207,6 +241,7 @@
                                                         <tr>
                                                             <td align="center">
                                                                 <a href="https://www.bulgari.com/en-us/bags-and-accessories/womens/handbags/cross-body-bags/serpenti-forever-crossbody-bag-calf-leather-yellow-291500" target="_blank"
+                                                                class="discover-now-btn"
                                                                 style="
                                                                     text-decoration: none;
                                                                     text-transform: uppercase;
@@ -221,7 +256,7 @@
                                                         </tr>
                                                     </table>
                                                 </td>
-                                                <td width="20px"></td>
+                                                <td width="20px" class="purse-spacer"></td>
                                                 <td align="right">
                                                     <a href="https://www.bulgari.com/en-us/bags-and-accessories/womens/handbags/mini-bags/serpenti-cabochon-crossbody-mini-bag-calf-leather-orange-291485" target="_blank"
                                                         style="text-decoration: none;"
@@ -234,6 +269,7 @@
                                                         <tr>
                                                             <td align="center">
                                                                 <a href="https://www.bulgari.com/en-us/bags-and-accessories/womens/handbags/mini-bags/serpenti-cabochon-crossbody-mini-bag-calf-leather-orange-291485" target="_blank"
+                                                                class="discover-now-btn"
                                                                 style="
                                                                     text-decoration: none;
                                                                     text-transform: uppercase;
@@ -274,7 +310,7 @@
                                             "
                                         >
                                             <tr>
-                                                <td width="10%"></td>
+                                                <td width="10%" class="link-spacer"></td>
                                                 <td>
                                                     <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
                                                         <tr>
@@ -375,7 +411,7 @@
                                                         </tr>
                                                     </table>
                                                 </td>
-                                                <td width="10%"></td>
+                                                <td width="10%" class="link-spacer"></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -387,7 +423,7 @@
                                     <td>
                                         <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
                                             <tr>
-                                                <td width="30%"></td>
+                                                <td width="30%" class="social-link-spacer"></td>
                                                 <td>
                                                     <a href="https://www.instagram.com/bulgari/" target="_blank">
                                                         <img src="./src/images/Instagram.gif" alt="instagram icon"
@@ -416,7 +452,7 @@
                                                     >
                                                     </a>
                                                 </td>
-                                                <td width="30%"></td>
+                                                <td width="30%" class="social-link-spacer"></td>
                                             </tr>
                                         </table> 
                                     </td>
